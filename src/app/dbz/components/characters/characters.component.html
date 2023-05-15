@@ -1,0 +1,8 @@
+<h2>Add new character</h2>
+<form (ngSubmit)="emitCharacter()">
+    <label for="">Character's name</label>
+    <input type="text" class="form-control" name="name" [(ngModel)]="characterAdd[0].name">
+    <label for="">Power</label>
+    <input type="text" class="form-control" name="power" [(ngModel)]="characterAdd[0].power">
+    <button class="btn btn-outline-primary mt-3">Save</button>
+</form>
